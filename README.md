@@ -1,5 +1,5 @@
 ![License](https://img.shields.io/badge/license-MIT-green)<br>
-![Rust](https://img.shields.io/badge/Rust-1.69.0-orange?style=flat-square&logo=rust)
+![Rust](https://img.shields.io/badge/Rust-1.80.1-orange?style=flat-square&logo=rust)
 
 # rusty_encryptor
 
