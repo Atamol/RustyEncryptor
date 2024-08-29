@@ -1,0 +1,4 @@
+[dependencies]
+clap = "4.1"
+ring = "0.16"
+base64 = "0.21"
