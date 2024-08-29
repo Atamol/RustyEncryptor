@@ -1,3 +1,6 @@
+![License](https://img.shields.io/badge/license-MIT-green)<br>
+![Rust](https://img.shields.io/badge/Rust-1.69.0-orange?style=flat-square&logo=rust)
+
 # rusty_encryptor
 
 シンプルで高速なAES-256-GCM暗号化ツールです．CLIを使って簡単にファイルやテキストの暗号化・復号化ができます．
