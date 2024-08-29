@@ -31,6 +31,9 @@ git clone https://github.com/Atamol/rusty_encryptor.git
 
 ```
 cd rusty_encryptor
+```
+
+```
 cargo build --release
 ```
 
