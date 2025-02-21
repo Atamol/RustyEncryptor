@@ -1,9 +1,13 @@
 ![License](https://img.shields.io/badge/license-MIT-green)<br>
 ![Rust](https://img.shields.io/badge/Rust-1.80.1-orange?style=flat-square&logo=rust)
 
-# Rusty_Encryptor
+[English Version](https://github.com/Atamol/RustyEncryptor/blob/main/README.en.md) / 日本語版
 
-シンプルかつスピーディーなAES-256-GCM暗号化ツール．CLIを使って簡単にファイルやテキストの暗号化・復号化ができる．  
+---
+
+# RustyEncryptor
+
+シンプルかつスピーディーなAES-256-GCM暗号化ツールです．CLIを使って簡単にファイルやテキストの暗号化・復号化ができます．  
 
 ## 特徴
 - AES-256-GCMによる高速な暗号化・復号化
@@ -21,7 +25,7 @@ base64 = "0.21"
 
 ### 暗号化
 
-テキストをAES-256-GCMで暗号化する．暗号化には32バイト（base64エンコード済み）の鍵が必要である．
+テキストをAES-256-GCMで暗号化する．暗号化には32バイト（base64エンコード済み）の鍵が必要です．
 
 ```
 ./target/release/rusty_encryptor -e "Hello, world!" -k "YOUR_BASE64_ENCODED_32_BYTE_KEY"
@@ -29,12 +33,12 @@ base64 = "0.21"
 
 ### 復号化
 
-暗号化されたテキストを復号化する．同じ鍵を使用して復号化する．
+暗号化されたテキストを復号化します．同じ鍵を使用して復号化します．
 
 ```
 ./target/release/rusty_encryptor -d "ENCRYPTED_TEXT" -k "YOUR_BASE64_ENCODED_32_BYTE_KEY"
 ```
 
 ### 注意
-- AES-256-GCMは12バイトのNonceを使用する．現在の実装では固定値を使用しているが，実際の運用ではランダムに生成し，暗号文とともに管理する必要がある．
-- 鍵の管理には十分な注意が必要である．適切な管理を行うこと．
+- AES-256-GCMは12バイトのNonceを使用します．現在の実装では固定値を使用していますが，実際の運用ではランダムに生成し，暗号文とともに管理する必要があります．
+- 鍵の管理には十分な注意が必要です．適切な管理を行いましょう．
