@@ -6,7 +6,7 @@ use base64::{encode, decode};
 fn main() {
     let matches = Command::new("Rusty Encryptor")
         .version("1.0")
-        .author("Your Name")
+        .author("YOUR NAME")
         .about("Encrypts and decrypts text or files using AES-256-GCM")
         .arg(
             Arg::new("encrypt")
