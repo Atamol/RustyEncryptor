@@ -16,7 +16,7 @@
 
 ## ライブラリ
 
-```
+```toml
 [dependencies]
 clap = "4.1"
 ring = "0.16"
@@ -27,7 +27,7 @@ base64 = "0.21"
 
 テキストをAES-256-GCMで暗号化する．暗号化には32バイト（base64エンコード済み）の鍵が必要です．
 
-```
+```bash
 ./target/release/rusty_encryptor -e "Hello, world!" -k "YOUR_BASE64_ENCODED_32_BYTE_KEY"
 ```
 
@@ -35,7 +35,7 @@ base64 = "0.21"
 
 暗号化されたテキストを復号化します．同じ鍵を使用して復号化します．
 
-```
+```bash
 ./target/release/rusty_encryptor -d "ENCRYPTED_TEXT" -k "YOUR_BASE64_ENCODED_32_BYTE_KEY"
 ```
 
